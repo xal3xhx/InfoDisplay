@@ -8,17 +8,18 @@ var addpanel
 var ui_instance  # Store a reference to the UI instance
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func _ready() -> void:
 	get_tree().connect("node_added", self, "check_node")
+	PlayerData.connect("_inventory_refresh", self, "_on_inventory_update")
 
 func check_node(node: Node) -> void:
-	if node.name == "main_menu":
+	if node.name == "playerhud":
 		ui_instance = node
 		var button := menu.instance()
-		ui_instance.add_child(button)
+		ui_instance.get_node("main").add_child(button)
 
 
-func _process(delta):
+func _on_inventory_update():
 	update_money()
 	update_fish()
 
@@ -26,7 +27,7 @@ func update_money():
 	if ui_instance:
 		cash_lerp = lerp(cash_lerp, PlayerData.money, 0.2)
 		var rounded_cash = round(cash_lerp)
-		#ui_instance._updateCash("$" + str(rounded_cash))
+		ui_instance.get_node("main").get_node("MarginContainer")._updateCash("$" + str(rounded_cash))
 
 func update_fish():
 	if ui_instance:
@@ -39,4 +40,4 @@ func update_fish():
 			
 			valid_items.append(item["ref"])
 
-		#ui_instance._updateFish(" " + str(valid_items.size()))
+		ui_instance.get_node("main").get_node("MarginContainer")._updateFish(" " + str(valid_items.size()))
