@@ -2,7 +2,7 @@
 id = "InfoDisplay"
 name = "InfoDisplay"
 description = "Adds a display to the HUD for basic info."
-version = "1.0.1"
+version = "1.0.2"
 homepage = "https://github.com/xal3xhx/InfoDisplay"
 author = "xal3xhx"
 

@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+## 1.0.2
+
+Changes:
+
+  - Updated icon
+
 ## 1.0.1
 
 Fix:
