@@ -8,3 +8,5 @@ obj/
 *.pck
 
 manifestation/
+
+*.zip
