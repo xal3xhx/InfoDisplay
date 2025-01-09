@@ -1,0 +1,11 @@
+{
+    "Id": "InfoDisplay",
+    "PackPath": "InfoDisplay.pck",
+    "Metadata": {
+        "Name": "InfoDisplay",
+        "Author": "xal3xhx",
+        "Version": "1.0.0",
+        "Description": "Adds a display to the HUD for basic info.",
+        "Homepage": "https://github.com/xal3xhx/InfoDisplay"
+    }
+}

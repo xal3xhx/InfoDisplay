@@ -1,0 +1,9 @@
+{
+    "dependencies": [
+      "NotNet-GDWeave-2.0.14"
+    ],
+    "description": "Adds a display to the HUD for basic info.",
+    "name": "InfoDisplay",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/xal3xhx/InfoDisplay"
+  }

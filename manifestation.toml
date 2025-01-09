@@ -1,0 +1,17 @@
+
+id = "InfoDisplay"
+name = "InfoDisplay"
+description = "Adds a display to the HUD for basic info."
+version = "1.0.0"
+homepage = "https://github.com/xal3xhx/InfoDisplay"
+author = "xal3xhx"
+
+icon = "icon.png"
+readme = "README.md"
+
+[project]
+csharp = "./InfoDisplay/InfoDisplay.csproj"
+godot = "./project/project.godot"
+
+[[dependencies]]
+thunderstore_version = "NotNet-GDWeave-2.0.14"
